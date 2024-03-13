@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+             justify-content: center;
+             align-item: center;
+		background-color:powderblue;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+             margin-left: 120px;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+h1{
+font-size: 35px;
+margin-top: 20px;
+
+}
+#reason{
+height: 50px;
+width: 310px;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+		<label for="mobile_number">Mobile No.:</label>
+        <input type="number" id="Mobile No." name="Mobile No." required>
+
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+	<label for="branch">Branch:</label>
+        <select id="branch" name="branch" required>
+            <option value="COMPUTER ENGINEERING">COMPUTER ENGINEERING</option>
+            <option value=" INFORMATION TECHCNOLOGY ENGINEERING">INFORMATION TECHCNOLOGY ENGINEERING</option>
+            <option value="ELECTRONICS AND TELECOMMUNICATION ENGINEERING">ELECTRONICS AND TELECOMMUNICATION ENGINEERING </option>
+		<option value="ELECTRICAL ENGINEERING">ELECTRICAL ENGINEERING</option>
+		<option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
+		<option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+		<option value="AUTOMOBILE ENGINEERING">AUTOMOBILE ENGINEERING</option>
+        </select>
+	<label for="year">Year:</label>
+        <select id="year" name="year" required>
+            <option value="FY">FY</option>
+            <option value="SY">SY</option>
+            <option value="TY">TY</option>
+<label><b>Choose Your Favorite Coding Language:</b></label>
+
+
+		<input type="radio" class="shifted-radio" name="fav_language" value="HTML"  id="HTML">
+ 		 <label for="html">HTML</label>
+
+
+ 		 <input type="radio" id="Java" name="fav_language" value="java">
+ 		 <label for="java">Java</label>
+
+ 		 <input type="radio" id="Python" name="fav_language" value="python">
+ 		 <label for="python">Python</label>
+
+		<input type="radio" id="SQL" name="fav_language" value="SQL">
+ 		 <label for="SQL">SQL</label>
+
+ 		 <input type="radio" id="React" name="fav_language" value="react">
+ 		 <label for="react">React</label>
+
+ 		 <input type="radio" id="LINUX" name="fav_language" value="LINUX">
+ 		 <label for="LINUX">LINUX</label>
+
+        </select>
+<label id="favlang">Why this language <label>
+<textarea id="reason"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
